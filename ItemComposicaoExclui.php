@@ -1,0 +1,38 @@
+<?php 
+###########
+## Módulo para exclusao de item da arvore de materiais
+## Criado: 21/06/2007 - Maycon Edinger
+## Alterado: 
+## Alterações: 
+## 
+###########
+/**
+* @package workeventos
+* @abstract Módulo para exclusao de item da arvore de materiais
+* @author Maycon Edinger - edinger@bol.com.br
+* @copyright 2007 - Maycon Edinger
+*/
+
+//Seta o header do retorno para efetuar a acentuação correta usando o AJAX
+if ($_GET["headers"] == 1) {
+	header("Content-Type: text/html;  charset=ISO-8859-1",true);
+}
+
+//Com a utilização do AJAX, deve-se efetuar nova conexão e novo processamento de diretivas
+// Processa as diretivas de segurança 
+require("Diretivas.php");
+
+//Estabelece a conexão com o banco de dados
+include "./conexao/ConexaoMySQL.php";
+
+//Captura o id do produto a efetuar a consulta/composição
+$ItemId = $_GET["ItemId"];
+$ComposicaoId = $_GET["ComposicaoId"];
+
+//Exclui o material
+mysql_query("DELETE FROM item_evento_composicao WHERE id = $ComposicaoId");
+
+//Retorna para a visualização da árvore
+header("location: ItemComposicaoCadastra.php?headers=1&ItemId=$ItemId");
+
+?>

@@ -1,0 +1,1308 @@
+Notas de Release
+****************
+Versão 1.30 (09/09/2010)
+
+- Corrigido a palavra SADO da quitação do contas a receber;
+
+- Modificado nos módulos de contas a pagar e receber na antiga parte de exclusão de pagamento ou recebimento, agora a palavra usada é ESTORNAR.
+
+- Implementado na super pesquisa a possibilidade de buscar também pelo código do formando.
+
+- Desativado a exibição do total de terceiros do evento na visualização de detalhamento do evento.
+
+- Implementado no relatório do evento, na parte de formandos, a exibição da coluna participante (C/B, C, etc...).
+
+- Implementado no detalhamento do evento, na parte de formandos, um resumo das estatísticas dos formandos, divididas em status (total a se formar, formado e pendente) e participação (colação e baile, somente colação, somente baile).
+
+- Corrigido bug no meu portal onde não era exibido o aniversário de um colaborador na data atual.
+
+- Implementado no meu portal um maior destaque ao aniversário de um cliente ou colaborador na data atual.
+
+- Implementado no cadastro de eventos campos para a data e hora do jantar (req. Zulaine).
+
+- Implementado a liberação aos detalhes e alteração da parte financeira e quebras para o usuário Zulaine.
+
+- Liberado o acesso a atualização de juros e multa para o usuário Bruna;
+
+- Implementado na atualização dos boletos online que, quando um usuário estiver fazendo a atualização, outro usuário não pode efetuar a mesma atualização até o outro concluí-la.
+
+- Liberado o acesso a atualização online dos boletos para o usuário Bruna.
+
+- Implementado nova opção no módulo de consulta contas a receber -> por evento e conta-caixa.
+
+- Implementado no módulo de foto e vídeo a exibição do código do formando ao lado de seu nome.
+
+- Implementado na exibição da conta a receber que, caso ela tenha um boleto vinculado e esteja em aberto, exibe um botão para efetuar a baixa do boleto diretamente pela conta.
+
+- Implementado no módulo de baixa do boleto a rotina para armazenar o nome do usuário que efetuou a baixa do mesmo.
+
+- Implementado no módulo de baixa do boleto, que, caso este boleto já esteja baixado, mostra todos os detalhes da baixa, como a data, o valor, as observações da baixa e o nome do usuário que baixou o boleto.
+
+- Implementado no sistema nova opção para autualização financeira ONLINE por formando, permitindo enviar para o servidor online os boletos alterados de um único formando, acelerando o processo de envio.
+
+- Implementado na consulta de formandos através da superpesquisa, o sistema agora exibe o código do evento que o formando pertence junto ao nome do evento nos resultados da consulta.
+
+- Implementado no relatório geral de eventos por data, uma coluna para exibição do código do evento (bruna).
+
+- Implementado na consulta de contas a receber, a troca da palavra "EM ABERTO" por "A VENCER".
+
+- Alterado no cadastro de contas a receber a palavra "REPLICAR" para "DUPLICAR".
+
+- Removido o campo de situação do módulo de alteração de contas a receber, o que permitia reabrir uma conta mesmo depois de aberta.
+
+- Implementado nova opção no cadastro de colaboradores para marcar o colaborador como EX-FUNCIONARIO.
+
+- Implementado novo relatório no RH para listagem somente dos Ex-Funcionários.
+
+- Na superconsulta, na listagem das contas a receber de formatura, agora o sistema totaliza o numero de contas a receber sendo listadas e soma a coluna dos valores, totalizando no final.
+
+- Implementado no foto e vídeo novos campos vinculados ao formando para a Data da Venda, Data do Envio para o laboratório, Data de retorno do laboratório, data de entrega para o cliente e data de envio para o cliente.
+
+- Implementado na consulta do formando a exibição dos dados de foto e vídeo relativos ao formando, mostrando as datas da venda, envio lab, etc.. e também as observações do foto e vídeo para este formando.
+
+- Corrigido bug que ocorria ao estornar o recebimento de uma conta a receber que possuia um boleto vinculado. Antes, ao estornar o recebimento, o boleto ainda continuava como recebido. Problema corrigido.
+
+
+*** 1.30b - 13/09/2010
+
+- Nova versão do foto e vídeo;
+
+- Sistemática de emissão de AR (botão disponível ao lado de cada formando dentro do foto e vídeo);
+
+- Remoção da parte de resumo financeiro dentro do detalhamento do evento.
+
+
+*** 1.30c - 18/10/2010
+
+- Implementado a sistemática de gerenciamento de Pedidos do Foto e Vídeo. Além do cadastro do pedido, existe o módulo para gerenciamento das consultas e impressão de pedidos. O acesso a este módulo está no menu EVENTOS -> Pesquisar pedidos do foto e vídeo.
+
+
+
+Versão 1.29 (21/07/2010)
+
+- Implementado a nova logo de identidade da consoli eventos nos layouts dos boleto e nos relatórios do sistema que possuiam a logo antiga.
+
+- Implementado no layout do boleto, no campo que exibe o valor do boleto, agora caso a conta tenha um valor superior a mil reais, o sistema coloca o "ponto" de separador de milhar "1.000,00". Estas modificações também foram feitas para a versão online do work.
+
+- Implementado a rotina para o cálculo automático de multa e juros das contas a receber em atrazo. Quando o sistema é acessado através do usuário "Valqueline", ele verifica quando foi efetuada a última atualização de aplicação de multa e juros e pergunta ao usuário se ele deseja efetuar o processo. Ao clicar em OK, o sistema separa as contas que venceram no dia e aplica a multa (que é feita uma única vez caso a conta esteja vencida). Após a aplicação da multa, o sistema então processa os juros para todas as contas vencidas.
+
+- Implementado o módulo para Estatísticas de Produtividade, que mostra o total de contas a receber, boletos, formandos e contas a pagar cadastrados no work eventos nos últimos 5 dias de uso, para fins de monitoramento das atividades dos usuários do sistema (verificação do quanto produziu dentro do sistema). (MENU CONFIGURAÇÕES -> ESTATÍSTICAS DE PRODUTIVIDADE).
+
+- Implementado na exibição do detalhamento do evento e no módulo de cadastro de formandos, para exibir o campo do código do formando antes do nome.
+
+- Corrigido bug que ocorria no módulo de contar a pagar que o botão "PAGAR CONTA" não era exibido mesmo a conta estando em aberto ou com pagamento parcial.
+
+- Implementado no módulo de contas a receber o botão para poder excluir um pagamento parcial ou total da conta, da mesma maneira que já existia no recebimento de contas.
+
+
+Versão 1.28 (02/07/2010)
+
+- Corrigido bug que ocorria ao efetuar o pagamento de uma conta a pagar utilizando um cheque de terceiro. O valor pago sempre adicionava dois "zeros" ao final, onde 250,00 viarva 25.000,00. Problema corrigido.
+
+- Implementado no cadastro de formandos campos para informar o telefone comercial e residencial. O Campo que antes era o telefone agora é destinado ao celular (este é o campo que é exibido na consulta do formando).
+
+- Implementado o relatório de consulta a contas a receber de acordo com a consulta que é exibida na tela, utilizando as mesmas funcionalidades, como listagem das contas vencidas, em aberto e recebidas e suas totalizações.
+
+- Implementado no módulo de contas a receber a possibilidade de escolher quais colunas deseja que seja exibida tanto na consulta na tela quanto no relatório.
+
+- Implementado no cadastro de vales a possibilidade de escolher se o vale será para um funcionário ou freelance.
+
+
+
+Versão 1.27 (18/06/2010)
+
+- Implementado o botão voltar que é exibido quando se exclui um vale de um colaborador. Ao clicar sobre o botão, é retornado a exibição dos detalhes do colaborador.
+
+- Implementado o controle de exibição dos dados do vale dos colaboradores na consulta. Caso esteja desmarcado para o usuário não cadastrar vales, não serão exibidos os dados dos vales na consulta do colaborador.
+
+- No cadastro de preferências, agora existem a opção de informar o valor padrão para a multa da conta a receber e a taxa de juros para aplicar a conta.
+
+- No cadastro de formandos foi modificada a rotina de geração de senha de acesso ao módulo online. Conforme acordado em reunião, o sistema agora gera a senha do formando pegando os 4 últimos números de seu CPF.
+
+- Implementado no cadastro de contas a receber o campo para o Valor de Custo do Boleto, que pega por padrão o valor definido nas preferências do sistema, porém permitindo o usuário alterar esse valor na hora do cadastro da conta a receber.
+
+- Implementado no cadastro de contas a receber os campos para o valor da taxa da multa por atraso e também o valor da taxa de juros cobrada ao mês por atraso do pagamento. Esses campos pegam por padrão o que foi definido nas preferências do sistema, porém permite o usuário alterar os valores ao digitar a conta a receber.
+
+- Implementado no contas a receber, na replicação da conta, informar qual o dia que os próximos vencimentos da conta acontecerão. Se informar dia 31, e o mês tiver 30 (ou 28) dias, a data do vencimento da conta é antecipada.
+
+- Implementado no contas a receber a correta aplicação na sequencia do numero do documento caso a conta tenha sido replicada em mais parcelas. Agora ao clicar no botão "gerar número", a sequencia final "01" não é mais aplicada. Ao salvar a conta o sistema automaticamente agrega os números sequenciais para este campo.
+
+- Implementado no contas a receber, ao salvar a conta, o sistema exibe um resumo do desmembramento da conta, como uma planilha que demonstra a parcela, o numero do documento, o valor da parcela e a data de vencimento.
+
+- Reestruturado o módulo de contas a receber, agora classificando e listando as contas vencidas, em aberto e recebidas, totalizando as contas a cada grupo, de acordo com o acordado com o Sr. Joni na reunião de 11/06/2010.
+
+- Criado sistema independente que efetuou a troca das senhas dos formandos já cadastrados no sistema para utilizarem a nova definição de senha dos 4 ultimos numeros do cpf. O sistema converteu todas as senhas já geradas para o novo formato.
+
+
+Versão 1.26 (11/06/2010)
+
+- Implementado no cadastro de eventos os campos para informar o valor da colação e o valor do baile (para uso no contas a receber).
+
+- A SuperBar agora fica fixa abaixo da tela. Opção implementada para evitar estouros de memória ao usar o navegador Internet Explorer.
+
+- Redefinição completa do módulo de consulta a contas a receber. Toda a redefinição tem como finalidade reproduzir a planilha do excel utilizada pelo depto financeiro.
+  Agora pode-se efetuar toda a renegociação de títulos, como valores e vencimentos diretamente nesta tela de consulta, facilitando o trabalho dos usuários.
+  Junto nessa relação também é exibida se o formando participa do baile e colação (C/B), somente colação (C) ou somente baile (B), e também exibe o valor original da despesa do usuário.
+  No final todas as colunas exibidas são totalizadas.
+ 
+
+Versão 1.25 (08/05/2010)
+
+- Corrigido formato de acesso ao sistema de boletos online criado pelo pessoal da Doze Soluções. O formato apresentado não efetuava o login no work eventos. Foi modificado o código fonte do projeto para adequar-se as necessidades do Work.
+
+- Na SuperBar, agora também é exibido o código do último evento trabalhado.
+
+- Na listagem de contas a receber, caso a conta tenha um boleto vinculado, aparece ao lado da mensagem "Gerado pelo contas a receber" os dizeres (VIA BOLETO).
+
+- Corrigido bug em alguns módulos do sistema que não permitia o usuário ter acesso ao botão de editar o registro mesmo tendo essa opção liberada no gerenciamento de usuarios.
+
+- Movido o relatório de vales por período do menu de relatórios, para dentro do menu financeiro.
+
+- Corrigido bug que ocorria ao gerar boletos duplicados por uma conta, nesses casos o numero sequencial do "nosso numero" não coincidia com o numero da parcela da conta duplicada, ficando o final sempre "01".
+
+- Implementado novos campos no contas a receber para informar o valor original da conta, o valor a receber (valor original + despesas de boletos, se tiver).
+
+- Implementado na visualização da conta, um maior destaque a situação da conta, sendo exibida no topo da tela,com um destaque em vermelho, para as situações "EM ABERTO", "RECEBIMENTO PARCIAL" e "RECEBIDA".
+
+- Implementado ao visualizar uma conta a receber, e esta tiver um boleto associado, agora é possivel clicar num link para já visualizar o boleto.
+
+- Implementado no cadastro de evento o campo para TIPO DO EVENTO, onde é possível escolher entre Evento Social e Formatura. Isso é importante para vincular ao contas a receber, onde caso uma conta for de evento social já mostra somente os eventos sociais e assim por diante.
+
+- Implementado no cadastro de contas a receber que ao escolher o tipo de evento que será a conta a receber (evento social ou formatura), o sistema já iré exibir os eventos de acordo com a escolha do usuario (eventos sociais ou formaturas).
+
+- Implementado no cadastro de contas a receber, no botão de gerar o código do documento, o sistema agora gera esse código automaticamente para todas as opções de contas a receber escolhidas, e não apenas para as contas a receber de formaturas.
+
+- Implementado novas opções de restrição de acesso aos usuários. Agora pode-se escolher o relatórios que cada um pode acessar no sistema individualmente, podendo restringir os relatórios de Financeiro, Eventos, Cadastros e RH.
+
+- Implementado no módulo de visualização do boleto online que, quando o boleto for exibido, automaticamente já abra a caixa de impressão do boleto, facilitando ao usuário o processo de impressão.
+
+- Implementado no módulo de pesquisas, o valor informado a pesquisar agora também efetua a pesquisa dentro de contas a receber por evento social e contas a receber de formaturas.
+
+- Impementado na superpesquisa a possibilidade de informar o numero do documento de uma conta a receber que o sistema irá procurar o valor do numero também ao invés de somente o nome (função para o Jeison poder procurar os boletos do sicoob que ele emite manualmente para o foto e vídeo).
+
+
+
+Versão 1.24 (Contém todas as atualizações acumulativas das versões 1.23b até a 1.23f)
+
+- Implementado nas consultas a boletos a opção para poder excluir um boleto e juntamente a conta a receber cujo boleto esteja vinculado.
+
+- Implementado no módulo de contas a receber um botão para gerar o número do documento (que será utilizado também no boleto) de forma automática, preenchendo sozinho o campo, usando o parâmetro definido EEEFFFFFSS onde: EEE = Número do evento, FFFFF = Número do formando e SS e o número sequencial do boleto.
+
+- Aumentado o tamanho do campo para observações financeiras do formando, passado de 80 para 150 caracteres.
+
+- Reescrita as rotinas internas do contas a receber e boletos, permitindo agora ao escolher um formando de um evento, o sistema automaticamente entende que não irá utilizar um sacado normal (cliente, fornecedor ou colaborador) e prioriza o boleto e a conta a sairem com os dados do formando no local do sacado.
+
+- Implementado a possibilidade de replicar contas a receber, permitindo efetuar o parcelamento de contas, onde se informa o numero de vezes que a conta deve ser repetida, e qual o intervalo de dias de vencimento que a conta terá. Desta forma o sistema cria automaticamente o numero de contas e boletos (caso houver) necessários de acordo com o especificado pelo usuário.
+
+- Implementado a opção de informar o tipo de conta a receber que será criada, se for por sacado normal (cliente/fornecedor/colaborador) ou se for por evento social, ou ainda evento de formatura, onde então o sistema automaticamente ativa ou desativa os campos que devem ser preenchidos. Desta forma, se uma conta tiver escolhido o evento, o sacado será o evento, se escolher uma formatura, o sacado será o formando, e se ecolher um sacado normal, o sistema acata ao tipo escolhido.
+
+- Implementado na consulta de contas a receber a opção de listagem por Evento + formando.
+
+- Efetuadas as implementações no relatório impresso da listagem das contas a receber, de modo que reflita todas as novidades na questão de sacados diferenciados e a filtragem por evento + formando.
+
+- Na listagem de contas a receber, quando se escolhe a filtragem por evento ou evento + formando, o campo para selecionar o evento agora permite informar o código do evento.
+
+- Implementado a possibilidade de excluir um lançamento de recebimento de uma conta a receber, removendo o lançamento e estornando o valor recebido do total da conta a receber.
+
+- Implementado a reestruturação do módulo de alteração de contas a receber para atuar de forma similar ao cadastro da conta, onde ao escolher um evento de formatura ou evento social, o sistema habilita ou não os campos necessários para o preenchimento.
+
+- Implemento no sistema de boletos online que se o boleto já estiver quitado, não permite mais o formando visualizar o boleto.
+
+- Implementado no módulo de super pesquisa para também pesquisar os boletos. O campo que é pesquisado é o "Nosso Número". Quando o usuário informar o valor do nosso numero no campo de pesquisa, caso tiver boletos que correspondam, os mesmos serão exibidos na tela de retorno da consulta.
+
+- Implementado no módulo de consultas para que a pesquisa nos módulos de eventos, clientes, fornecedores e colaboradores permitissem pesquisar o valor informado também nos campos de códigos ao invés de somente na descrição. Desta forma, caso informar o valor 1 por exemplo ele irá pesquisar este valor dentro dos campos de códigos e nome dos módulos referidos.
+
+- Implementado na listagem de boletos, o campo de nosso numero é dividido em várias cores de modo ao usuário entender de onde vem os dados que montam e compõe o "nosso numero".
+
+- Implementado no relatório de listagem de vales a exibição do logotipo da empresa e também da exibição do campo de observações.
+
+- Implementado no módulo de Posição Financeira dos formandos do evento para exibir o subtotal de boletos por formando e um totalizador geral no final da consulta.
+
+- Implementado a opção de emitir um relatório da posição financeira dos formandos, da mesma forma que a consulta é exibida na tela, agora possui a opção de impressão (antes aparecia a mensagem "Opção ainda não implementada").
+
+
+
+Versão 1.23 (19/03/2010)
+
+- Implementado no cadastro de formandos do evento uma área para posição financeira do formando, contendo a situação financeira, os valores devidos, pagos e pendentes bem como uma observação financeira.
+
+- Os detalhes do financeiro do formando são exibidos nas listagens dos formandos, no detalhamento do evento e no cadastro de formandos (mostrando um ícone sobre sua situação financeira e as observações financeiras do formando).
+
+- Implementado no relatório de situação financeira do formando a possibilidade de optar para gerar a consulta do histórico financeiro com base nos boletos emitidos para o formando ou pela posição financeira que está cadastrado dentro do cadastro do formando no evento.
+
+- Alterado a posição do relatório de posição financeira do evento, tirado de dentro do menu financeiro e passado para o menu de relatórios/financeiro, dando assim acesso aos demais usuários que necessitam ver os staus dos formandos.
+
+- ALterado nome dos campos no cadastro de vale, para "Data de Emissão" e "Data de Desconto".
+
+- Implementado o relatório de listagem de vales emitidos por período.
+
+- Implementado tabela interna para registrar as atualizações que é feito para o servidor online de consulta a boletos, que registra a data, hora de inicio e termino da atualização.
+
+- Criado a sistemática de atualização dos dados para o servidor online de consulta e emissão de boletos dos formandos.
+
+- Criado todo o sistema de consulta de boletos online, permitindo os formandos acessarem sua "área financeira" e verficar o status de seus boletos com a Consoli, e ainda pertmitindo abrir seus boletos e imprimí-los diretamente de qualquer pc com internet.
+
+
+
+
+Versão 1.22 (06/03/2010)
+
+- O módulo de pesquisas agora efetua sua pesquisa também nos formandos do evento, sendo ágil para os atendentes buscar os dados do formando, como senha, telefone, etc...
+
+- Implementado rotina no cadastro de formandos que valida em tempo real o CPF do formando informado. Caso o cpf seja inválido o sistema já notifica o usuario no momento em que terminar de completar o número.
+
+- Implementado rotina no cadastro de formandos que ao alterar um formando
+ que não tenha nenhuma senha de acesso ainda definida o sistema cria uma automaticamente.
+
+- Implementado o cadastro de vales para os colaboradores.
+
+- Implementado no cadastro de vales que quando efetua um lançamento de vale, automaticamente o sistema gera um lançamento a débito no controle de fluxo de caixa.
+
+- Implementado na visualização do colaborador a listagem dos vales que foram fornecidos ao colaborador.
+
+- Implementado a exibição dos vales fornecidos ao colaborador ao emitir o relatório da ficha cadastral do colaborador.
+
+- Implementado o inicio do desenvolvimento do modulo para visualizar a posição financeira dos formandos num evento.
+
+
+Versão 1.21 (20/02/2010)
+
+- Modificado o formulário de alteração de contas a receber para igualar aos campos do cadastro da conta a receber.
+
+- Implementado ao excluir uma conta a receber, exclui também os cheques que tenham sido cadastrados como recebidos de um recebimento desta conta.
+
+- Corrigido bug que ocorria ao dar permissão para um usuário ver os módulos financeiros, o contas a receber não era exibido ao usuário.
+
+- Implementado possibilidade de utilizar os códigos para os campos de consultas a tabelas nos módulos de eventos, contas a pagar e receber, podendo informar os códigos dos cadastros ao invés das iniciais no preenchimento destes módulos.
+
+- Implementado nas consultas de clientes, fornecedores e eventos para exibir os códigos de cadastro juntamente com a descrição.
+
+- Removido a opção de vincular um usuario do sistema no módulo de colaboradores, pois este não é mais utilizado.
+
+- Implementado a possibilidade de informar os valores da data e hora do CERTAME no cadastro de eventos e seu alerta no meu portal.
+
+- Implementado a possibilidade de informar os valores de data, hora e local do foto convite do evento e seu alerta no meu portal.
+
+- Implementado nova funcionalidade, a superbar, que permite visualizar o último evento acessado e todos os seus sub-módulos de forma rápida e ágil, contando também com a caixa da super pesquisa que foi embutida na superbar. Esta barra se desloca dinamicamente por todo o sistema, rolando juntamente com a página conforme o usuário utiliza o work eventos. Desta forma, foi removido no topo do sistema a informação sobre o ultimo evento acessado e também foi removido a área antiga para pesquisa do work, uma vez que foi tudo embutido na superbar.
+
+- Implementado campo para cadastro de roteiro do evento.
+
+- Implementado no cadastro de formandos do evento, que o campo para o CPF seja de preenchimento obrigatório, já pensando na implementação dos boletos online, onde o login para acesso a área restrita é o CPF do formando.
+
+- Implementado a rotina para geração de senha de acesso dos formandos ao módulo de boletos online. Quando um formando é lançado no sistema, automaticamente uma senha aleatória de 8 caracteres é gerada e vinculada a seu cadastro no work eventos. A combinação do CPF + SENHA será a autenticação utilizada pelo formando para visualização de sua situação financeira no boleto online.
+
+- Implementado nas preferencias do sistema a possibilidade de pré-definir os textos que aparecerão no corpo do boleto, nas 4 linhas para instruções bancárias disponíveis.
+
+- Implementado as rotinas iniciais para toda a montagem dos módulos do fluxo de caixa, incluindo a possibilidade de efetuar um lançamento avulso no caixa, escolhendo entre crédito ou débito. Nas próximas versões do work, neste módulo de fluxo de caixa será possível verificar o andamento das entradas e saídas de valores financeiros da empresa, de modo consolidado entre todos os módulos do work.
+
+- Finalizado a primeira versão do módulo de emissão de boletos do sistema, totalmente integrado ao work, onde ao gerar uma conta a receber, é possível já emitir o boleto referente aquela conta, sendo então enviado aos clientes.
+
+- Implementado tela para recebimento dos boletos, que, ao serem pagos, automaticamente efetua a quitação da conta a receber que gerou o boleto, marcando a conta como recebida pelo boleto.
+
+
+Versão 1.20 - 15/01/2010
+
+- Implementado a exibição da função dos funcionários e colaboradores nos relatórios.
+
+- Implementado rotinas para inclusão de informações financeiras no módulo de locações (Posição Financeira, Número da NF e Observações financeiras);
+
+- Implementado a possibilidade de pesquisar locações de acordo com sua posição financeira.
+
+- Implementados 3 novas unidades de medida para utilização no sistema (Fardo, Pacote, Vidro, Metro e Latas);
+
+- Implementado melhoria na visualização das unidades de medidas utilizadas no sistema, contando agora com uma descrição detalhada em cada local onde uma unidade de medida é utilizada, bem como onde estas unidades são exibidas, ao passar o mouse sobre os textos, sua descrição também é exibida;
+
+- Implementado coluna na exibição dos detalhes da locação para mostrar o valor total de cada item utilizado na locação.
+
+- Implementado rotina no módulo de locações que, quando um item ainda se encontra pendente, a exibição do mesmo fica na cor vermelha, facilitando a visualização.
+
+- Início da implementação das rotinas de geração e integração de boletos ao sistema de contas a receber.
+
+
+Versão 1.19 - 11/12/2009
+
+- Na listagem dos eventos no meu portal, agora todas as estapas do evento (culto, colação, etc...) são exibidos entre [] e ao deixar o mouse sobre os nomes exibi quais as datas destas etapas.
+
+- Corrigido bug no meu portal onde não listava corretamente a quantidade de formandos desistentes.
+
+- Ao efetuar a conclusão do evento, agora caso o formando estava marcado como desistente, este permanece assim, não sendo mais definido como formado.
+
+- Implementado um módulo de visualização de compromissos totalmente remodelado, permitindo ao usuário consultar de forma fácil todos os seus compromissos futuros ou passado, e ainda verificar por horário.
+
+- Implementado a possibilidade de cancelar a participação de um terceiro ao evento. Caso esse terceiro tenha gerado uma conta a pagar, ao ser cancelado sua conta vinculada é excluída automaticamente.
+
+- Corrigido no módulo de foto e vídeo a fórmula de cálculo das comissões. Agora o cálculo leva em conta os descontos concedidos na hora da venda do item ao formando.
+
+- Implementado relatório de eventos de acordo com a posição financeira (Recebido, a receber e cortesia).
+
+- Implementado nos módulos de contas a pagar e receber para que a data do pagamento/recebimento já venha preenchida com a data do vencimento da conta.
+
+- Corrigido bug no recebimento de uma conta a receber. Caso fosse recebido em dinheiro, o sistema listava o recebimento, porém não descontava do montante total a receber.
+
+- Ao efetuar o pagamento ou recebimento de uma conta, o valor padrão na caixa de texto do valor pago/recebido já vem informando por padrão o valor do saldo a pagar/receber da conta.
+
+- Implementado a possibilidade de associar um formando a uma conta a receber.
+
+- Preparação do sistema para receber no futuro o módulo de envio de boletos diretamente pelo work.
+
+- Implementado a capacidade de navegação entre os cheques cadastrados de forma similar ao hábil, com botões de primeiro, anterior, próximo e último.
+
+
+
+Versão 1.18 - 20/11/2009
+
+- Corrigido bug que não salvava o valor correto informado no cadastro de terceiros do evento.
+
+- Implementado função no cadastro de terceiros do evento que, caso o usuário optar por não inserir uma conta a pagar para este terceiro, os campos dos dados da conta fiquem desabilitados.
+
+- Criado dois novos relatórios para a área de RH, um para listagem somente dos freelances e outro para somente os colaboradores.
+
+- Implementado exibição dos detalhes da data e usuário de cadastro e alteração de uma locação.
+
+- Implementado ao editar o retorno dos itens de uma locação, atualiza os dados de quem alterou a locação.
+
+- Renomeado as colunas para Quantidade Locada e Quantidade Retornada nos produtos de uma locação.
+
+- Implementado nova coluna para exibir a quantidade pendente de retorno de um item de locação (calculada automaticamente).
+
+- Implementado controle automático da situação de uma locação. Agora até que todos os itens de uma locação forem devolvidos, esta constará como PENDENTE. Após a devolução total, constará como RECEBIDA.
+
+- Implementado na consulta de locações a exibição em destaque da situação da locação e o campo Recebido por...
+
+- Implementado módulo para listar as locações que estão pendentes diretamente no meu portal.
+
+- Implementado novo campo para posição financeira do evento, permitindo informar em "A receber, Recebido ou Cortesia".
+
+- Implementado possibilidade de filtragem dos eventos na consulta pelo novo campo de posição financeira.
+
+- Implementado melhoria na exibição do tipo de filtragem dos eventos na consulta, exibindo para o usuário as opções em que os eventos estão sendo consultados.
+
+- Implementado campo para informar o numero da Nota Fiscal no cadastro do evento.
+
+- Corrigido bug que permitia no módulo de gerenciamento de usuários e nas preferências de troca de senha para usuários que não tem acesso ao gerenciamento, o sistema estava permitindo salvar a senha em branco, o que ocasionava uma brecha de segurança.
+
+- Implementado a possibilidade do administrador do sistema bloquear o acesso ao sistema para um usuário, não sendo mais necessário a intervenção manual para bloqueio de um usuário diretamente no banco de dados do sistema.
+
+- Removido a opção de excluir um usuário cadastrado no sistema. Esta medida tem por finalidade evitar a inconsistência com os registros que foram previamente cadastrados pelo usuário dentro do sistema, fazendo com que se perdesse a rastreabilidade das ações do usuário dentro do work caso este fosse excluído. Caso queira inutilizar o acesso de um usuário, agora deve-se alterá-lo e definir seu status como INATIVO, o que o bloqueará de acessar o work, porém manterá toda a rastreabilidade de suas ações.
+
+- Implementado rotinas iniciais para personalizar as opções de acesso aos módulos do sistema, permitindo um controle bastante preciso sobre o que cada usuário pode acessar no sistema. Esta implementação exigiu uma profunda reestruturação na forma como o sistema interpreta as rotinas de segurança do acesso a cada módulo. Conforme novas reuniões de consultoria forem acontecendo, deverão ser determinadas novos tipos de controle ou bloqueios a partes específicas do sistema.
+
+- Implementado a exibição dos detalhes de quantos formandos compraram foto e vídeo ou estão pendentes quando for gerado um relatório de congelamento de foto e vídeo de forma resumida.
+
+- Implementado possibilidade de excluir um terceiro do evento (na verdade foi Recolocado a possibilidade, pois havia sido solicitado para remover essa opção na versão Versão 1.12 de 07/04/2009).
+
+- Implementado texto descritivo no cadastro de produtos e serviços do evento para alertar ao usuário que as quantidades informadas são unitárias de acordo com suas respectivas unidades de medida.
+
+- Implementado rotina que exibe automaticamente o nome da empresa que está acessando na tela de login do work eventos.
+
+- Implementado rotina para exibir automaticamente a empresa que está trabalhando no título do navegador de internet.
+
+
+Versão 1.17 - 27/09/2009
+
+- Implementado a possibilidade de imprimir um congelamento do foto e vídeo do evento. O botão de impressão fica disponível dentro da visualização do congelamento, podendo escolher se deseja imprimir detalhado ou somente os totais.
+
+- Corrigido bug que não permitia adicionar uma foto ao colaborador quando este já estivesse cadastrado e estava no módulo de alteração do colaborador (só estava permitindo adicionar a foto a um colaborador novo).
+
+- Corrigido bug que ocorria no módulo de pesquisa de locações quando informava algum nome para pesquisar e clicava no botão "Pesquisar Locações". A pesquisa não era exibida e gerava um erro.
+
+- Implementado botões para voltar para o detalhamento da locação nas telas de relatório da locação e tela de gerenciamento de devoluções da locação.
+
+- Implementado a matriz de assinaturas no relatório de detalhamento da locação. Campo para assinatura do auxiliar de depósito, entregue por e cliente.
+
+- Implementado opção na tela de emissão do relatório de detalhamento da locação para optar por imprimir ou não a declaração de compromisso de devolução.
+
+- Implementado no relatório de detalhamento da locação para imprimir a declaração de compromisso de devolução.
+
+- Implementado distinção visual para dar ênfase aos campos que devem ser preenchidos nos cadastros, sem os quais o sistema não deixa salvar o registro (ainda não disponível em todas as telas).
+
+- Implementado no cadastro de colaboradores campo para distinguir o tipo de colaborador, em freelance ou funcionário. Para manter a compatibilidade com os registros previamente cadastrados, todos os colaboradores cadastrados receberam o tipo FREELANCE, sendo que os funcionários cadastrados deverão ter seu cadastro alterado manualmente.
+
+- Removido o campo de Tipo de Colaborador do cadastro de colaboradores, consultas e relatório, pois era uma informação redundante.
+
+- Removido o cadastro de tipos de colaborador do menu principal. Este módulo não será mais utilizado.
+
+- Na tela de consulta a colaboradores e na pesquisa geral, agora é exibido o tipo de colaborador (freelance ou funcionário) e sua função.
+
+- Implementado no módulo de consulta a colaboradores a possibilidade de consultar somente os freelances ou somente os funcionários.
+
+- Implementado a exibição do tipo de colaborador na listagem de aniversariantes do meu portal.
+
+- Implementado o novo logotipo da empresa nos relatórios.
+
+- Implementado os atalhos de acesso rápido aos módulos filhos do evento na tela de exibição da capa (detalhamento) do evento.
+
+- Implementado novo campo ao cadastro de eventos para permitir informar o nome do responsável pelo orçamento do evento. O antigo campo chamado responsável agora chama-se responsável pelo evento.
+
+- Modificado a fonte de exibição da capa de abertura do relatório do orçamento. Agora a fonte é Times New Roman, tamanho 12.
+
+- Implementado relatório geral de colaboradores (menu Relatórios->Recursos Humanos->Relação de Colaboradores).
+
+- Implementado um novo campo no banco de dados para armazenamento da senha de acesso dos usuários sem criptografia. Agora nao módulo de gerenciamento de usuários, o administrador poderá visualizar as senhas dos usuários, desde que a partir desta nova versão, os usuários alterem (ou reconfirmem) suas senhas.
+
+- Implementado opção para o administrador do sistema poder alterar a senha de um usuário, ao alterar seus dados. Esta função é especialmente útil para quando o usuário esquecer a senha e esta precisar ser "zerada" ou modificada.
+
+- Corrigido bug que não permitia efetuar a exclusão de uma locação em determinados casos.
+
+- Implementado no menu principal um acesso direto para a pesquisa de ORÇAMENTOS, com as mesmas opções para a pesquisa de eventos. Foi removido a opção de pesquisar eventos em orçamento no menu de pesquisa de eventos.
+
+- Implementado no relatório do evento, todas as opções que existem para impressão do detalhamento do evento, estão disponíveis também ao imprimir o orçamento do evento.
+
+- Implementado no cadastro de locações o campo de "Recebido por:"
+
+- Implementado destaque maior para a informação de qual empresa está trabalhando (Consoli ou K Eventos)
+
+
+
+Versão 1.16 - 05/09/2009
+
+- Implementado a possibilidade de "congelar" a posição atual do foto e vídeo. Após o congelamento, este ficará listado na área do foto e vídeo, podendo ser verificado ao clique do link. Os dados do congelamento não podem ser alterados, e sim somente visualizados.
+
+- Implementado no módulo de emissão de etiquetas de endereçamento dos formandos do evento, para que seja impresso o campo de observações junto na etiqueta.
+
+- Implementado possibilidade de imprimir o detalhamento do foto e vídeo em completo ou somente os totais do foto e vídeo.
+
+- Renomeado o link de acesso ao cheque com a palavra AVULSO e o módulo em si para Manutenção de Cheques Avulsos.
+
+- No cadastro de cheques avulsos, agora pode-se informar manualmente os valores da agência e da conta do cheque.
+
+- Implementado preparação interna que já efetua a distinção da origem do cheque (lançamento avulso ou originado de conta a receber)
+
+- Implementado nova rotina para anexar a foto a um colaborador. Agora o sistema permite inlcuir e alterar as fotos. Para o envio, pode-se usar qualquer imagem em formato JPG, BMP ou GIF.
+
+- Implementado a exibição da foto do colaborador no módulo de pesquisa, na consulta de colaboradores e no relatório impresso de detalhamento do colaborador.
+
+
+Versão 1.15 - 30/06/2009
+
+- Implementado o texto "R$" na coluna de descontos do módulo de foto e vídeo.
+
+- Corrigido o texto do botão no contas a receber, cujo texto antigo era "Nova Conta a Pagar" e não "A Receber".
+
+- Removido os "****" na frente das contas a pagar e receber que serviam como auxilio para efetuar a exclusão das contas antigas.
+
+- Implementado no relatório de detalhamento do evento, caso for selecionado para não imprimir os valores financeiros, ainda assim deve-se imprimir as colunas das quantidades dos itens.
+
+- Implementado a coluna para exibição da função na listagem dos colaboradores aniversariantes do mês no meu portal.
+
+- Implementado que somente o departamento de foto e vídeo ou superior tem acesso aos detalhes de preço do foto e vídeo na exibição e alteração de um evento.
+
+- Implementado nova rotina de assinatura digital em todos os módulos "filhos" de eventos. Agora qualquer alteração efetuada em qualquer módulo fica cadastrado no sistema.
+
+- Implementado cadastro de cheques avulsos, sendo utilizado posteriormente no módulo de contas a pagar.
+
+- Implementado no pagamento de uma conta a pagar para que o valor do pagamento seja o valor do saldo a pagar da conta.
+
+- Corrigido bug que mesmo quando a conta a pagar fosse totalmente paga, seu status ainda permanecia "em aberto".
+
+
+=================
+
+ALTER TABLE `eventos` ADD `datas_timestamp` TIMESTAMP NOT NULL ,
+ADD `datas_operador_id` INT NOT NULL ,
+ADD `participantes_timestamp` TIMESTAMP NOT NULL ,
+ADD `participantes_operador_id` INT NOT NULL ,
+ADD `enderecos_timestamp` TIMESTAMP NOT NULL ,
+ADD `enderecos_operador_id` INT NOT NULL ,
+ADD `produtos_timestamp` TIMESTAMP NOT NULL ,
+ADD `produtos_operador_id` INT NOT NULL ,
+ADD `servicos_timestamp` TIMESTAMP NOT NULL ,
+ADD `servicos_operador_id` INT NOT NULL ,
+ADD `terceiros_timestamp` TIMESTAMP NOT NULL ,
+ADD `terceiros_operador_id` INT NOT NULL ,
+ADD `brindes_timestamp` TIMESTAMP NOT NULL ,
+ADD `brindes_operador_id` INT NOT NULL ,
+ADD `formandos_timestamp` TIMESTAMP NOT NULL ,
+ADD `formandos_operador_id` INT NOT NULL ,
+ADD `foto_video_timestamp` TIMESTAMP NOT NULL ,
+ADD `foto_video_operador_id` INT NOT NULL ;
+
+======
+
+Versão 1.14 - 09/06/2009
+
+- Removido as restrições aos acessos financeiros ao exibir os detalhes de valores de produtos e serviços no detalhamento do evento.
+
+- Corrigido bug que ocorria ao listar contas a receber por conta caixa. Não estava listando as opções de conta-caixa de entrada.
+
+- Implementado campo para informar detalhes referente as quebras de produtos do evento.
+
+- Implementado campo para informar dados de foto e vídeo no evento (valor da foto, do dvd e observações). Somente foto e video ou superior tem acesso a estes dados.
+
+- Implementado um nivel de super usuário (nivel 9) o qual somente ele poderá acessar a parte de gerenciamento de usuários. Usuário valqueline terá esse privilégio alterado diretamente pelo banco de dados do sistema na atualização da nova versão.
+
+- Implementado que todos os itens dos módulos filhos do evento armazena o usuário que cadastrou e alterou o registro.
+
+- Implementado coluna para totalização do produto no módulo de produtos do evento.
+
+- Implementado coluna para totalização dos serviços no módulo de serviços do evento. 
+
+- Implementado nova coluna no módulo de foto e vídeo do evento para informar o valor de desconto do produto. Esse valor é debito do valor total da venda do item. Implementado também no relatório.
+
+- Implementado campo para informar o vendedor do foto e vídeo do evento. Este vendedor deve estar cadastrado no cadastro de colaboradores. Implementado também a exibição no relatório de foto e vídeo.
+
+
+
+========
+
+ALTER TABLE `eventos_fotovideo` ADD `valor_desconto` DECIMAL( 10, 2 ) NOT NULL AFTER `comissao` ;
+ALTER TABLE `eventos` ADD `vendedor_id` INT NOT NULL AFTER `comissao_60` ;
+
+
+
+Versão 1.13 - 11/05/2009
+
+- Implementado ícones para exibição do status do evento em todas as consultas e exibições de eventos no sistema.
+
+- Liberado acesso aos dados de valores do serviço do evento a todos os níveis de usuário.
+
+- Implementado na consulta de contas a receber para que o nome da conta inicie com 5 asterísticos (*****) para que a Sra. Valqueline possa excluir algumas contas que foram cadastradas em versões antigas do sistema, antes da reestruturação deste módulo. Em alguns casos, o nome do fornecedor da conta a pagar não era exibido, não permitindo acessar a conta para excluí-la. Desta forma, ao clicar sobre o "*****" permite exibir a conta e excluí-la.
+  ATENÇÃO. Esta funcionalidade será removida em uma futura versào do work, após o Ok da Valqueline, após a exclusão das contas antigas.
+
+- Implementado coluna para totalizar os produtos do evento e os serviços de terceiro do evento. Antes, na exibição do detalhamento do evento, somente exibia a coluna com o valor unitário. Agora existe a coluna de totalização do item (quantidade X valor unitário).
+
+- Implementado sistema de totalização do evento na exibição dos detalhes do evento.
+
+- Modificado as contas a receber para a conta-caixa "Vale Free Lance" - Operação realizada diretamente no banco de dados da empresa.
+
+- Na exibição do detalhamento do evento, na parte da listagem dos formandos, agora ao clicar no nome do formando, leva diretamente ao formulário de alteração dos dados deste formando.
+
+- Implementado rotina para aplicar status aos formandos do evento. Agora ao cadastrar um formando, pode-se atribuir um statos para o mesmo, sendo estes como "A se Formar",  "Formado" ou "Desistente".
+  Esse status é exibido juntamente com os detalhes e listagens dos formandos dentro do evento.
+
+- No meu portal, onde listava a quantidade de formandos atendidos, agora além de totalizar, ainda subdivide as quantidades de acordo com seu status.
+
+- Ao editar um evento e marcá-lo como REALIZADO, automaticamente caso houver formandos neste evento, eles serão marcados como FORMADOS.
+
+  *** ATENÇÃO ***
+  Com essa nova implementação dos formandos possuirem um status e isto não existir anteriormente, foi necessário atribuir um status aos formandos já cadastrados no sistema.
+  Desta forma, todos os formandos possuem um status de FORMADOS. 
+  Deve-se verificar quais eventos que ainda não foram realizados e possuem formandos cadastrados, me enviar o nome do evento e a data da realização, para que eu possa manualmente marcar os formandos com o status de A SE FORMAR.
+
+
+
+Versão 1.12 - 07/04/2009
+
+- Redimensionado o relatório de etiquetas de endereçamento do formando para não haver o corte da etiqueta na quebra de página do relatório.
+
+- Implementado campo para informar o número de participantes no baile do evento.
+
+- Implementado campo para informações financeiras no evento, contando com uma opção se essa informação pode ser vista por todos os usuários ou somente usuários do depto financeiro.
+
+- Liberado a visualização do campo de valor do produto para todos os níveis de usuário no módulo de produtos do evento.
+
+- Implementado módulo para alteração das datas do evento.
+
+- Corrigido exibição dos detalhes do evento no meu portal. Os textos para COLAÇÃO, BAILE, ETC... estavam aparecendo juntos.
+
+- Removido do cadastro de bancos a opção de agência e conta corrente (que será um novo módulo, chamado conta corrente)
+
+- Implementado o cadastro de conta corrente.
+
+- Removido as opções de excluir um serviço de terceiro do evento diretamente do evento, sendo somente possível excluí-lo ao remover a conta a pagar.
+
+- Corrigido a nomenclatura das consultas das contas a receber que exibiam como "pago" onde as contas deveriam aparecer "recebidas".
+
+- Corrigido opção para excluir as contas a receber.
+
+- Implementado o cadastro de cheques avulsos ao sistema.
+
+
+Versão 1.11 - 24/03/2009
+
+- Implementados novos campos no cadastro de evento para informar as datas e observações para Ensaio, culto, colação e baile.
+
+- Alterado texto no cadastro de eventos para o campo de Lugares Ocupados para Lugares Montados.
+
+- Corrigido a exibição diferenciada de um evento marcado como "Não-realizado" na listagem dos eventos no meu portal.
+
+- Implementado rotinas para exibir os eventos no meu portal pesquisando pelos novos campos de data (data do culto, colação, etc...) e exibindo um texto indicativo do tipo do estágio do evento que acontece no período.
+
+- Implementado na consulta de contas a pagar para que o nome da conta inicie com 5 asterísticos (*****) para que a Sra. Valqueline possa excluir algumas contas que foram cadastradas em versões antigas do sistema, antes da reestruturação deste módulo. Em alguns casos, o nome do fornecedor da conta a pagar não era exibido, não permitindo acessar a conta para excluí-la. Desta forma, ao clicar sobre o "*****" permite exibir a conta e excluí-la.
+  ATENÇÃO. Esta funcionalidade será removida em uma futura versào do work, após o Ok da Valqueline, após a exclusão das contas antigas.
+
+- Alterado campo para Número do Documento no cadastro de contas a pagar. Agora o campo comporta 20 caracteres e possibilidade de uso de letras e caracteres especiais.
+
+- Corrigido quando em alguns casos, os detalhes de um fornecedor não eram exibidos, retornando a tela com os campos em branco.
+
+- Implementado a reestruturação do módulo de contas a receber, fazendo a integração com o módulo de cheques internamente.
+
+
+Versão de 1.10 - 14/02/2009
+
+- Implementado o vínculo entre a conta a pagar e o terceiro do evento que a originou. Agora, caso apagar uma conta a pagar no módulo de contas, irá excluir tamb[em o terceiro que a originou no evento e vice-versa (deletando o terceiro do evento, apaga a conta a pagar gerada automaticamente por ele).
+
+- Implementado uma verificação para exibir a origem da conta a pagar no módulo de consulta a contas. Agora exibe o texto de origem, indicando se ela foi gerada pelo módulo de contas a pagar ou gerada automaticamente por um terceiro do evento, exibindo também o evento que a gerou.
+
+- Corrigido problema que exibia duas vezes o campo de cliente na alteração de um evento.
+
+- Implementado para exibir o código gerado automaticamente pelo sistema nos módulos de Centro de custo de conta e conta-caixa.
+
+- Implementado rotina para exibir o número total de formandos atendidos pela consoli no meu portal.
+
+- Implementado rotina para exibir os colaboradores aniversariantes do mês no meu portal.
+
+- Implementado a duplicação do botão de salvar os itens do foto e vídeo do evento ao final do formulário, evitando assim do usuário ter de navegar novamente até o topo da página para efetuar a rotina de salvar as informações.
+
+- Implementado novos campos no módulo de eventos para informar o numero de alunos na colação e baile.
+
+- Implementado a exibição do nível de acesso do usuário atual no rodapé do sistema.
+
+- Corrigido problema de um usuário de nivel FOTO E VÍDEO não ter acesso a impressão do relatório de planilha do foto e vídeo.
+
+- Implementado a restrição a usuários de níveis inferiores visualizarem os módulos financeiros do sistema e seus respectivos relatórios.
+
+- Implementado no módulo de terceiros do evento o campo para status, onde deve-se informar se o mesmo está a contratar ou já foi contratado. Nas consultas e relatórios do evento aparecem a divisão de terceiros conforme seu status (a contratar ou contratado)
+
+- Implementado opção para consulta de eventos entre datas, adicionando qualquer outro filtro já desenvolvido no módulo de consulta de eventos.
+
+- Implementado relatório de listagem de eventos entre datas (Menu Relatórios/Eventos/Eventos por Data.
+
+- Implementado a opção de se alterar os detalhes de um terceiro cadastrado a um evento.
+
+
+Versão de 1.09 - 03/02/2009
+
+- Alterado texto indicativo do último evento trabalhado para ultimo evento acessado.
+
+- Implementado forma de visualização diferenciada nas consultas para quando um evento estiver com o status de "não-realizado".
+
+- Corrigido erro relatório de foto e vídeo. Diferente da consulta na tela, o relatório não estava totalizando os brindes disponibilizados, nem descontando os brindes do estoque do produto.
+
+- Implementado campo para informar valor de desconto da comissão do vendedor no departamento de foto e vídeo.
+
+- Implementado campo para informar a forma de pagamento da comissão do foto e vídeo, em A vista, 30 e 60 dias.
+
+- Implementado campo para informar o valor de um bonus de comissão dado ao vendedor no cadastro de foto e vídeo e seu relatório.
+
+- Implementado campos para informar o numero de pessoas confirmadas e o numero de lugares ocupados no evento e em seu relatório
+
+- Aumentado o tamanho da fonte de exibição do texto dos dados dos endereços do evento.
+
+- Removida a validação que necessitava que um evento fosse informado ao abrir uma nova conta a pagar.
+
+- Implementado opção para filtragem dos relatórios das contas a pagar incluindo sua situação (todas, em aberto, pagas ou vencidas) em cada opção.
+
+- Corrigido a disposição dos relatórios do sistema (menu relatórios), incluído os relatórios dos módulos faltantes e renomeado alguns relatórios para condizerem com os novos nomes dos módulos do sistema.
+
+- Corrigido bug que ocorria ao imprimir o relatório de uma locação, caso o usuário desmarcasse a caixa de incluir valores financeiros no relatório, o mesmo não era impresso, gerando um erro.
+
+- Implementado módulo para consultar compromissos por período (entre datas inicial e final).
+
+- Implementado a exibição do estoque atual do produto de foto e vídeo no módulo.
+
+- Implementado a exibição do saldo a pagar de uma conta a pagar nas telas de consulta e relatórios.
+
+- Implementado no módulo de terceiros do evento a necessidade de informar a conta-caixa e o centro de custo da conta a pagar que será lançada automaticamente, caso o usuário optar por gerar uma conta a pagar.
+
+_ Implementado para que, quando um usuário eventualmente excluir um terceiro do evento, caso tenha gerado uma conta a pagar automaticamente, a mesma também é excluída na mesma operação.
+
+
+
+
+Versão de 1.08 - 16/12/2008
+
+- Implementado o número da versão do sistema e data de atualização para um melhor controle sobre a implementação de novas versões.
+
+- Implementado opção de incluir a capa padrão consoli ao orçamento do evento, podendo escolher entre a capa para casamento ou formatura.
+
+- Implementado campo de CPF no cadastro de formando do evento e nas etiquetas de endereçamento (correio).
+
+- Renomeado o campo no cadastro do cliente de "data comemorativa" para "data do evento".
+
+- Implementado novo módulo para listagem dos aniversariantes do dia no meu portal.
+
+- Implementado rotina para armazenar o último evento acessado por cada usuário, sendo exibido no topo do sistema. Isto permite um rápido acesso devolta ao evento em que se estava trabalhando caso precisar ir para algum outro módulo dentro do work eventos.
+
+- Implementado o sub-módulo para o cadastro de datas do evento e sua listagem no relatório de detalhamento do evento.
+
+- Agora, as opções de grupo do evento no cadastro de evento são fixas, em Consoli Rio do Sul, Joinville e Gerri ME, pois antes elas compartilhavam as mesmas tabelas do antigo módulo de GRUPO DE CONTA, o qual agora foi adaptado para Conta-caixa, sendo que foi necessário desvincular os dois módulos.
+
+- Implementado campo para cadastro da data do aniversário do cliente, e criado um módulo no meu portal para exibição dos clientes aniversariantes do dia
+
+- Renomeado o antigo módulo de subgrupo de conta para CONTA-CAIXA e implementado campo para dividir o tipo da conta em Entrada (Crédito) ou Saída (Débito)
+
+- Renomeado o antigo módulo de grupo de conta para CENTRO DE CUSTO DE CONTA
+
+- Renomeado as opções de consulta contas pagar para listar por conta-caixa e centro de custo de conta.
+
+- Implementado a opção para vincular uma conta a pagar a um evento.
+
+- Implementado a opção de consulta contas a pagar por evento.
+
+- Implementado novos campos de agência e numero da conta no cadastro de bancos.
+
+- Reestruração do módulo de contas a pagar para tornar-se similar ao já existente no Hábil.
+
+- Implementado nova forma de pagamento da conta, podendo receber múltiplos pagamentos para a mesma conta, de diversas formas diferentes.
+
+
+
+
+
+Versão de 24/11/2008
+
+- Corrigido problema que duplicava os links de atalhos para o módulo de repertório do evento dentro dos menus de navegação dentro dos submódulos do evento e não permitia acessar diretamente o módulo de foto e vídeo.
+
+- Corrigido a disposição do link "Gerenciar Foto e Vídeo" na tela de resumo (detalhamento) do evento.
+
+- Implementado caso o usuário não tiver acesso nivel 5 (financeiro) não são exibidas as opções de cadastros do financeiro no menu lateral do sistema.
+
+- Corrigido problema que não exibia corretamente a imagem de acesso ao módulo de foto e vídeo desativada (preto-e-branco) caso o usuário não tiver acesso ao nivel do foto e vídeo.
+
+- Implementado campo para informar observação por aluno no módulo de foto e vídeo.
+
+- Implementado campos para cadastro completo de endereço do formando do evento.
+
+- Implementado novo relatório para emissão de etiquetas de endereçamento (correio) aos formandos cadastrados no evento.
+
+- Implementado link no módulo de formandos do evento para permitir enviar uma mala direta via e-mail para todos os formandos cadastrados.
+
+- Aumentado o tamanho do campo de nome do evento de 50 para 75 caracteres.
+
+- Implementado campo para informar o percentual de comissão no módulo de foto e vídeo. Implementado também o campo para calcular automaticamente o valor da comissão com base no percentual informado.
+
+- Implementado o totalizador de comissões por aluno e o total geral por evento, para visualização na tela e no relatório de foto e vídeo.
+
+- Implementado coluna para totalização dos brindes ao final do módulo de foto e vídeo.
+
+- Corrigido bug que não debitava o total de itens de brinde do estoque nos totais gerais do módulo de foto e vídeo.
+
+- Implementado sistemática para contabilizar e exibir a quantidade de formandos atendidos e formandos pendentes no departamento de foto e vídeo.
+
+
+
+Versão de 03/11/2008
+
+- Alterado a descrição do módulo de centro de custo de foto e vídeo para Produtos do Foto/Vídeo
+
+- Alterado o campo de observações dos serviços. Agora o campo é formato texto, sem limite de numero de caracteres. Implementado essa alteração também na impressão do relatório de detalhamento do evento.
+
+- O campo de contato dos formandos do email foi dividido em dois e agora se chama Telefone e um específico para Email do formando.
+
+- Alterado o módulo de produtos. Agora a consulta dos produtos cadastrados primeiro agrupa pela descrição do centro de custo do produto alfabeticamente e depois dentro do centro de custo, pelo nome do produto alfabeticamente.
+
+- Implementado coluna para informar a quantidade disponibilizada como brinde no cadastro de foto e vídeo do evento. Esta coluna não totaliza ao valor a pagar para o formando, porém efetua a baixa do item no estoque do produto disponível.
+
+- Implementado a totalização da compra por formando no cadastro de foto e vídeo do evento.
+
+- Implementação de coluna para exibição da totalização em valor de venda do produto do foto e vídeo e do percentual de venda do produto.
+
+- Implementado no módulo de terceiro do evento e participante do evento para a opção de quando lançar automaticamente a conta a pagar para os participantes, agora cadastra junto ao campo de informações complementares da conta a pagar uma informação sobre qual evento essa conta foi gerada automaticamente, junto com a função exercida pelo participante/terceiro.
+
+
+Versão de 26/10/2008
+
+- Implementado o cadastro de centro de custo de foto e vídeo e seu relatório;
+
+- Alterado o ícone de serviços do evento nos módulos. O Antigo ícone foi redefinido como foto e vídeo pois representa melhor visualmente a opção.
+
+- Implementado o cadastro de formandos do evento e sua exibição em consultas e relatórios de detalhamento do evento.
+
+- Na pesquisa do evento, a informação da data do evento agora é exibida em destaque junto ao nome do evento.
+
+- Implementado possibilidade de ordenação da pesquisa de eventos por data ou por título do evento.
+
+- Implementado possibilidade de classificação da pesquisa de eventos por ordem ascendente (A-Z) ou descendente (Z-A).
+
+- Corrigido bug que ocorria ao excluir algum item de qualquer dos módulos do sistema. As vezes após a exclusão, o módulo aparecia com caracteres diferentes na representação das acentuações, problema que só afetava a visualização na tela.
+
+- Corrigido bug que não permitia alterar os dados dos contatos no evento ao alterar o cabeçalho do evento.
+
+- Implementado o módulo para gerenciamento do departamento de foto e vídeo do evento.
+
+- Implementado a listagem de formandos ao relatório de detalhamento do evento.
+
+- Implementado o relatório de planilha de controle de foto e vídeo do evento, listando os formandos com os respectivos itens adquiridos, juntamente com a quantidade do item disponível para compra. Ao final um totalizador por tipo de produto disponível no evento, totalizando as quantidades disponíveis, os totais comprados pelos formandos e o saldo do estoque.
+
+
+********************
+Versão de 05/10/2008
+
+- Alterado tamanho máximo do campo de Nome/Razão social do cliente de 50 para 75 caracteres.
+
+- Implementado novos campos no cadastro de clientes para inclusão de telefone comercial e renomeado o antigo campo telefone para telefone residencial.
+
+- Implementado rotina para informar uma data comemorativa no cadastro do cliente (para aviso na tela principal do sistema) e um campo para descrição da data comemorativa.
+
+- Implementado a exibição da data comemorativa dos cliente no MEU PORTAL. Caso a data cadastrada no cliente coincida com o dia e mês atual, um aviso é exibido na tela principal, conforme solicitação da Sra Zulaine.
+
+- Alterado texto no menu principal do sistema de LOGOUT para SAIR DO SISTEMA.
+
+- Corrigido bug que ocorria ao filtrar um evento por palvra-chave, a listagem não exibia corretamente o nome do cliente definido para o evento.
+
+- Incluído dois novos status para o cadastro de eventos: Em Orçamento e Não-Realizado. Alterado essas opções também nas consultas e exibições do evento.
+
+- Alterado textos no módulo de impressão do relatório de eventos para coincidir com as nomenclaturas alteradas utilizadas nos nomes dos módulos do sistema.
+
+- Implementado o cadastro de brindes e seu relatório (Estoque->Brindes).
+
+- Implementado o sub-módulo para cadastro de brindes do evento onde é possível informar quais brindes serão distribuídos pela empresa em um evento. Incluído também suas listagens em consultas e no relatório de detalhamento do evento.
+
+- Alterado a disposição dos ícones de acesso aos sub-módulos do evento (participantes, endereços, etc...) para disporem melhor das informações e permitirem acesso aos novos módulos a serem criados (ex: terceiros).
+
+- Implementado o sub-módulo de cadastro de terceiros no evento, nas consultas e no relatório de detalhamento do evento.
+
+- Alterado no cadastro de produtos do evento o campo de observações. Agora o formato do campo é tipo texto, permitindo a quantidade de caracteres e linhas que desejar. Implementado esta alteração também na impressão do relatório de detalhamento do evento.
+
+- Implementado campos para cadastro de contatos, observações do contato e telefone do contato ao cadastro de eventos e no relatório de detalhamento do evento.
+
+- Corrigido bug que ocorria na alteração do cabeçalho de um evento que não permitia utilizar o ícone do calendário para pegar uma nova data.
+
+- Implementada nova tela de acesso ao sistema, sendo mais dinâmica, e já posicionando o cursor diretamente sobre o campo de nome do usuário, não sendo mais necessário efetuar um primeiro "clique" para informar o nome.
+
+- Corrigido bug que ocorria ao tentar excluir uma conta a pagar ou a receber, o que, apesar de processar corretamente a solicitação de exclusão, não efetuava ela fisicamente do banco de dados.
+
+
+*****************
+Versão de 09/2008
+
+- Alterado sistemática de endereços do evento. Agora basta selecionar um fornecedor contido no cadastro de fornecedores que o sistema automaticamente pegará os dados de endereço dele, não sendo mais necessário informar a cada evento todos os dados de endereços novamente. Foi tomado o cuidado para preservar os dados da sistematica antiga. Dessa forma caso consultar algum evento do passado, ainda assim o sistema irá entender e apresentar os dados dos endereços antigos corretamente.
+
+- Implementado log de registro de inclusão e alteração do cadastro de eventos, mantendo armazenado o usuário que cadastrou e/ou alterou o registro, similar a outros módulos do sistema.
+
+- Alterado o texto das categorias de repertório no cadastro de repertório do evento para "Momentos de Repertório", para condizer com o mesmo nome do módulo que já havia sido alterado na revisão anterior do sistema.
+
+- Incluído a exibição do campo de informações complementares do endereço do evento para ser mostrado na tela de detalhamento do evento.
+
+- Alterado o módulo de Locais do Evento para se chamar Tipos de Local do Evento e seu relatório.
+
+
+Versão de 08/2008
+
+- Implementado o cadastro de categorias de serviços afim de dividir melhor os itens dos serviços para um evento.
+
+- Implementado o cadastro de serviços
+
+- Corrigido bug que não permitia cadastrar os bancos no sistema.
+
+- Alterado a nomenclatura do antigo cadastro de itens/produtos para Centro de Custo de Produto.
+
+- Alterado disposição no menu e renomeado alguns módulos do sistema, como Momentos de Repertório (categoria de   repertorio), Tipos de Locais (Locais do Evento).
+
+- Implementado o novo módulo para cadastro centro de custo de serviços, similar ao já existente módulo de itens
+  do evento.
+
+- Implementado o módulo de serviços do evento no relatório do evento e orçamento (e suas opções na geração do
+  relatório).
+
+- Corrigido bug que ocorria quando da pesquisa de locações em aberto ou devolvidas que fazia com que os registros
+  não eram listados na consulta, gerando um erro.
+
+- Corrigido bug que ocasionava não exibir corretamente os valores de preço de custo e preço de venda do
+  item/produto na consulta de seu respectivo formulário de cadastro.
+
+- Corrigido bug que gerava um erro de script quando salvava os itens de um evento (o erro era gerado, ainda 
+  que em nada prejudicava o desempenho e funcionamento do módulo.
+
+- Implementado a exibição do campo do custo do participante no evento no relatório de listagem de participantes.
+
+- Implementado campo para cadastro do valor de locação de um item. (e sua consulta e relatório).
+
+- Implementado para quando efetuar uma locação, no cadastro de itens, trazer por padrão o valor de locação
+  do item. Antes trazia por padrão seu preço de venda.
+
+- Reestilizado o layout do módulo principal do sistema (meu portal), com o rearranjo dos módulos e novas imagens.
+
+- Implementado nova listagem ao meu portal, onde lista os compromissos acontecendo no dia e também os compromissos   para os próximos 7 dias.
+
+- Implementado nova listagem ao meu portal, onde lista os eventos acontecendo no dia e também os eventos para os
+  próximos 7 dias.
+
+- No cadastro de compromissos, agora os valores da data atual já são preenchidos automaticamente quando do cadastro de um novo compromisso. Removido o ano de 2007 no cadastro e adicionado a opção de ano até 2020. 
+
+
+
+********************
+Versão de 05/11/2007
+
+- Implementado o cadastro de bancos.
+
+- Reestruturado o módulo de cadastro de cheques com os novos campos.
+
+- Implementado o módulo de consulta de cheques por situação e seu relatório.
+
+- Implementado rotina para compensar automaticamente os cheques em aberto das datas anteriores e atual
+  sempre que o sistema é executado.
+
+- O Módulo de cheques passou para o menu principal de módulos (opção NOVO CHEQUE). 
+
+- Renomeado o menu "Contas" para "Financeiro" e incorporado a este o módulo de relatórios de cheques.
+
+- Implementado a rotina para gerenciar a devolução dos itens locados. (quando consultar ou exibir os detalhes da   
+  locação, irá aparecer o botão gerenciar retorno dos itens.
+
+- Corrigido bug que ocorria quando da alteração de uma categoria de item e seu respectivo relatório;
+
+- Implementado rotinas para cadastro das categorias de repertório musical;
+
+- Implementado rotinas para o cadastro de músicas 
+
+- Implementado o cadastro de repertório musical do evento, acessado semelhante aos participantes, endereços e
+  itens do evento.
+
+- Reestilizado a tela de visualização do evento, exibindo também o repertório musical e melhorias nos painés de
+  visualização, que agora podem ser ocultados e reexibidos a critério do usuário.
+
+- Modificado a tela de opções do relatório do evento, onde agora possui botão para voltar ao evento e também a
+  opção de escolher individualmente quais módulos deseja constar no relatório, inclusive agregado para imrimir
+  o repertório musical do evento.
+
+- Implementado rotina para gerenciar individualmente a árvore de materiais de cada item adicionado ao evento.
+  Para tanto, acessar os itens do evento, e após o botão "Salvar itens e gerenciar materiais".
+
+- Implementado nova opção no relatório de eventos para incluir ou não o detalhamento da árvore de materiais
+  dos itens do evento (conforme descrição da opção anterior)
+
+- O campo para informar a quantidade de um item no evento e da quantidade de material na árvore de item do evento
+  agora só aceitam caracteres numéricos e o separador decimal "."
+
+
+********************
+Versão de 31/08/2007
+
+- Implementado o cadastro de grupo no módulo de eventos.
+
+- Implementado para que quando informar um participante do evento, caso desejar gerar uma conta a pagar,
+  os dados do grupo da conta será o mesmo do evento, e não mais pegando na tabela de parametros do sistema.
+
+- Implementado o arquivo parametros.php para alterar os dados do sub-grupo, categoria e cond. pagto das contas
+  a pagar geradas automaticamente quando da inclusão de um participante no evento.
+
+- Implementado o módulo de locação. O módulo está praticamente completo, faltando somente a parte de controle
+  da devolução dos itens locados.
+
+
+********************
+Versão de 15/08/2007
+
+- Redispostos os itens do menu principal de cadastros, sendo agrupado as posições por módulos do sistema.
+
+- Implementado rotina na emissão dos orçamentos do evento para se desejar incluir ou não os detalhes financeiros
+  do orçamento.
+
+- Implementado rotina no cadastro de participantes do evento para informar o valor do custo do participante no
+  evento. Também poderá informar para o sistema gerar automaticamente uma conta a pagar para a quarta-feira
+  subsequente a data do evento.
+
+- Novas alterações na estrutura de segurança do sistema. 
+  > Agora usuários nivel 4 podem acessar o módulo de contas a pagar com todas as funcionalidades, exceto efetuar 
+    a quitação da conta.
+  > Usuários nivel 4 não podem definir nem visualizar os valores dos itens do evento.
+
+- Implementado nova filtragem dos relatórios nos módulos de contas a pagar e receber: Filtragem agrupada por
+  grupo, subgrupo e categoria.
+
+
+
+********************
+Versão de 05/08/2007
+
+- Implementado acesso nivel 5, que libera acesso com mesmos privilegios do nivel 4, porém acessa também
+  os módulos financeiros (contas a pagar e receber)
+
+- Implementado módulo de cadastro de categorias de itens/produtos.
+
+- Implementado a exibição e organização dos itens do evento por categorias na montagem da escolha dos itens
+  que compõe o evento, facilitando a montagem dos orçamentos.
+
+- Implementado nova opção na emissão do relatório de evento, podendo escolher agora a modalidade de orçamento.
+
+- Implementado na visualização do evento, os itens agora são exibidos somentes os que fazem parte do evento,
+  sendo agrupados de acordo com sua categoria.
+
+- Implementado no relatório de detalhamento do evento, os itens agora são exibidos somentes os que fazem parte do evento, sendo agrupados de acordo com sua categoria.
+
+
+
+********************
+Versão de 20/07/2007
+
+- Corrigido bug que ocorria ao desemebrar uma conta a pagar ou receber. A mesma estava adicionando o 
+  numero de dias da parcela já na primeira parcela, quando o correto seria apenas a partir da segunda.
+
+- Implementado o cadastro de sub grupos de conta.
+
+- Implementado o campo para seleção do subgrupo nos módulos de contas a pagar e receber.
+
+- Implementado o campo para numero do documento nos módulos de contas a pagar e receber.
+
+- Implementado rotina para utilizar a telca ENTER para disparar a super pesquisa.
+
+- Removido validação para o campo EMAIL no cadastro de clientes.
+
+- Implementado a pesquisa para os módulos de Eventos, contas a pagar e receber na função da
+  Super Pesquisa
+
+- Implementado rotina para cadastro da função do colaborador no evento no cadastro de participanetes do
+  evento.
+
+- Implementado rotina para exibição da função do colaborador no evento, telefone e celular na exibição do
+  detalhamento do evento e relatório do evento.
+
+- Criado relatório para exibição dos participantes do evento de forma agrupada por função. Esta opção se
+  encontra junto do relatório de detalhamento do evento, onde agora deve-se escolher qual o tipo de 
+  relatório que se deseja emitir (exibição do evento -> Emitir Relatório)
+
+- Corrigido rotinas de javascript para verificação das datas das filtragens/relatórios das contas a pagar
+  e receber.
+
+- Implementado rotina para filtragem e relatório de contas a pagar e receber por sacado (com opção de datas)
+  Novo optativo nos módulos a pagar e receber.
+
+- Implementado rotina para filtragem e relatório de contas a pagar e receber por sub-grupo (com opção de datas)
+  Novo optativo nos módulos a pagar e receber.
+
+- Implementado rotina para envio de cópia-carbono de recados (envio para um segundo destinatário).
+
+
+********************
+Versão de 06/07/2007
+
+- Implementado o cadastro de condição de pagamento.
+
+- Implementado o combo para escolha da condição de pagamento no cadastro de contas a pagar e receber.
+
+- Implementado as rotinas para permitir o desmembramento de uma conta a pagar ou receber. Quando o usuário
+  selecionar uma condição de pagamento, e manter o checkbox de desmembrar conta como ativo, o sistema
+  automaticamente irá criar o numero de contas necessárias de acordo com a condição de pagamento selecionada,
+  inclusive se as datas de vencimentos calculadas cairem num sábado ou domingo, o sistema prorroga o 
+  vencimento para a segunda-feira subsequente.
+
+- Implementado o cadastro de cheques
+
+- Implementado a oção de vincular um pagamento de uma conta a um cheque previamente cadastrado no cadastro
+  de cheques.
+
+- Implementado rotinas para que somente usuários nivel 3 e 4 possam ver os valores dos itens do evento.
+
+- Implementado melhoria nos módulos de contas a pagar e receber para poder aplicar uma filtragem
+  adicional por data, quando selecionado uma opção de filtragem (Grupo, categoria e situação).
+
+- Implementado rotinas para "Opções" do produto no cadastro de itens/produtos. Pode-se definir se
+  um item também é material e se o mesmo será listado nos itens do evento ou nos orçamentos.
+
+- Implementado rotina para "Opções" do material no cadastro de materiais. Aqui pode-se definir
+  se o material tb pode ser utilizado como um produto.
+
+- Modificado a sistemática de inclusão dos participantes, endereços e itens dos eventos. Foram removidos
+  os ícones de acesso direto aos módulos no menu de favoritos do sitema. Para acessar cada um destes
+  módulos, deve-se efetuar a busca do evento na pesquisa para então ser exibidos as 3 opções de acesso
+  a estes módulos (desde que o usuário tenha acesso a esta função).
+
+- Implementado rotina para acesso a outras opções do evento quando estiver cadastrando os detalhes de
+  módulo do evento. Exemplo: Quando estiver cadastrando os participantes do evento, são exibidas as 
+  opções para acessar os módulos de endereços, itens do evento e detalhamento do evento, podendo os
+  módulos serem acessados diretamente, sem ter de efetuar uma nova busca.
+
+
+********************
+Versão de 22/06/2007
+
+- Implementado objeto de controle de campos tipo money para os módulos de contas a pagar, receber e
+  cadastro de colaboradores.
+
+- Implementado melhorias na visualização do colaborador (máscaras de campos financeiros e exibição do 
+  estado civil)
+
+- Implementado alterações no cadastro de itens do produto
+
+- Implementado módulo de cadastro de materiais.
+
+- Implementado o módulo para montagem da árvore de composição do produto. Pode-se definir os preços de venda 
+  utilizando diversas formas distintas de cálculo e aplicação.
+
+- Alterado o módulo de inclusão de itens do evento, agora contendo campo para informar as quantidades do item,
+  exibição da unidade do item e também para informar o valor de venda do item. Caso o item estiver já incluso
+  no evento, seu valor de venda é exibido na caixa de texto de acordo com o valor informado para o evento em si
+  caso não esteja no evento, é exibido o valor de venda normal.
+
+- Implementado tela para exibição das opções de impressão do relatório de detalhamento do evento.
+
+- O Relatório de detalhamento do evento agora pode ou não conter os detalhes financeiros do evento.
+
+
+********************
+Versão de 19/06/2007
+
+- Corrigido bug que ocorria quando da execução de responder um recado.
+
+- Implementado rotina para exibir os detalhes e tipo do sacado (cliente/fornecedor/colaborador) no módulo
+  de exibição de contas a pagar e a receber e seus respectivos relatórios.
+
+- Implementação de opção de visualização de eventos por status no módulo de pesquisa de eventos, podendo
+  visualizar eventos em aberto, concluídos ou todos os eventos.
+
+- Aumentado o tamanho do campo de informações complementares do evento na tela (no cadastro e alteração).
+
+- Corrigido bug que ocorria que permitia que um evento fosse cadastrado sem informar um cliente, ocasionando
+  posteior erro na visualização e alteração do evento.
+
+- Efetuado correção no relatório de detalhamento do evento para o campo Descrição do Evento ser impresso
+  utilizando multiplas linhas pois estava imprimindo somente a primeira linha, independente da quantidade
+  de texto cadastrada.
+
+- Implementado melhoria no relatório de detalhamento do evento para imprimir o logotipo da empresa no
+  cabeçalho de todas as páginas do relatório (antes imprimia somente na primeira página).
+
+- Implementado rotina para que os usuários nivel 2 e superiores possam designar destinatários para
+  o módulo de compromissos, permitindo cadastrar compromissos para si mesmo ou diretamente na agenda
+  de outro usuário do sistema.
+
+
+********************
+Versão de 08/06/2007
+
+- Implementado a tabela de GRUPOS DE CONTAS
+
+- Reestruturação dos módulos de contas a pagar e receber complementando as seguintes alterações
+  Agora existe um campo para escolha do tipo de pessoa, que ao ser escolhido exibe o combo de escolha 
+  da pessoa da tabela respectiva (clientes, fornecedores e colaboradores)
+  Implementado campo para escolha do grupo da conta
+  Implementado campo para escolha do tipo de pagamento se em dinheiro ou cheque
+  Implementado campo para informar o numero do cheque
+  Implementado campo para informar o valor pago/recebido
+
+- Alterado ordenação da listagem na consulta dos eventos. Agora são ordenados pela data de realizacao.
+
+- Implementado campo de dados complementares na parte de informações complementares do colaborador.
+
+- Corrigido bug que ocorria na exclusão de um evento cujo mesmo não excluía os participantes do evento.
+
+- Corrigido bug que ocorria quando clicava num participante do evento na consulta do evento.O mesmo não
+  exibia corretamente os detalhes do colaborador selecionado.
+
+- Agora usuários nivel 1 possuem acesso para consulta e visualização nos módulos de Eventos, Clientes,
+  Fornecedores e Colaboradores. Nenhum processamento (cadastro, alteração ou exclusão) é permitido.
+
+- No módulo de gerenciamento de usuários, agora os usuários nível 1 possuem a denominação Acesso Restrito
+  (antes era Somente Agenda), para condizer com as alterações em níveis de segurança implementadas.
+
+- No modulo de colaboradores, agora somente usuários nivel 3 ou 4 podem cadastrar ou alterar valores de
+  salários e características. Usuários nivel 2 também cadastram, porém sem esses campos.
+
+- Implementado rotina para permitir escolher se o relatório do evento deve ou não exibir os participantes
+
+- Reestruturado todo o módulo principal de contas a pagar e a receber
+
+- Implementado os módulos de visualização na tela e dos relatórios do contas a pagar e a receber.
+
+- Incluído duas novas opções de visualização e relatório das contas (por grupo e por situação)
+
+- Implementado rotinas para quitação das contas a pagar e receber
+
+
+
+********************
+Versão de 01/06/2007
+
+- Implementado a alteração dos dados do evento
+
+- Implementado a exclusão do evento (apaga todo o evento, endereços e itens do referido evento)
+
+- Implementado a alteração dos endereços do evento
+
+- Implementado a alteração dos itens do evento
+
+- Implementado as rotinas para exclusão de endereços do evento e itens do evento diretamente da tela de
+  visualização do evento (clicando nas imagens de excluir ao lado dos respectivos itens)
+
+- Corrigido problema no layout quando da inclusão de um novo usuário no sistema
+
+- Implementado a utilização do campo CIDADE_ID para os módulos de Clientes, Fornecedores e Colaboradores
+  Inclusive no módulo de eventos e relatórios.
+
+- Implementado a possibilidade de se vincular um colaborador a um usuário do sistema, para que o mesmo
+  seja notificado em sua agenda quando este for participante de um evento. (Campo novo no cadastro de
+  colaboradores) 
+  ATENÇÃO: Esta opção só está disponível para usuários nivel 3 ou superior
+
+- Implementado o módulo de cadastro de participantes do evento, gerando inclusive a notificação na agenda
+  do colaborador, caso este esteja vinculado a um usuário do sistema
+
+- Implementado rotinas para exclusão de participantes de um evento
+
+- Implementado a rotina para exibição (e exclusão) dos participantes do evento no módulo de exibição do evento.
+
+- Implementado a rotina para excluir a notificação da agenda do usuário caso este for removido do evento 
+  e também remove todas as notificações quando um evento for excluído.
+
+
+********************
+Versão de 25/05/2007
+
+- Implementado o cadastro de Cidades
+
+- Corrigido problema no módulo de super pesquisa que efetuava include no arquivo errado.
+
+- Implementado o cadastro de Itens
+
+- Implementado o cadastro de Locais do Evento
+
+- Implementado botões de navegação nos módulos de alteração dos registros (de todos os módulos), para 
+  poder cancelar a alteração e retornar para a tela de exbição do registro.
+
+- Implementado o cadastro de endereços do evento
+
+- Implementado o cadastro de itens do evento
+
+- Implementado o Módulo principal de eventos, com pesquisa
+
+- Implementado a Visualização completa do evento (com os detalhes completos)
+
+- Implementado o relatório de detalhamento do evento. 
+ 
+ATENÇÃO: foram removidos os campos de endereço da tabela de eventos antiga. Qualquer evento já
+      	 cadastrado no sistema irá perder a definição dos endereços.
+
+
+********************
+Versão de 18/05/2007
+
+- Implementado rotina de cadastro e gerenciamento de usuários (Menu configurações - Gerenciar Usuários);
+  ATENÇÃO: Somente usuários com NIVEL DE ACESSO 4 tem acesso a esta opção. Deve-se definir um usuário
+           nivel 4 manualmente dentro do banco de dados.
+
+- Caso o usuário for nível 1, foi implementado para só exibir e permitir acesso aos módulos de agenda,
+  recados e configuração de sua própria senha de acesso.
+
+- Implementado cadastro de contas a receber;
+
+- Removido validação no campo email do colaborador;
+
+- Implementado rotinas para utilização da foto do colaborador;
+
+- Implementado o Módulo geral de contas a pagar (menu Contas -> Contas a Pagar)
+
+- Implementado rotina para visualização das contas a pagar.
+
+- Implementado o Módulo geral de contas a receber (menu Contas -> Contas a Receber)
+
+- Implementado rotina para visualização das contas a receber.
+
+- Implementado as diretivas de segurança no módulo de colaboradores. Caso o usuário for nivel 
+  1 ou 2, ele não visualiza os valores de hora do colaborador. Nem será possível editar esses
+  campos caso o usuário não tiver os direitos de acesso.
+
+- Implementado módulo para cadastro de eventos.
+
+- Implementado módulo para alteração da conta a pagar;
+
+- Implementado módulo para alteração da conta a receber;
+
+
+********************
+Versão de 04/05/2007
+
+- Corrigido problema de não gravar e alterar o campo de valor_hora do cadastro de colaboradores.
+
+- Implementado novo campo para armazenar o valor_taxa quando em horas extras (sábado, domindo, etc);
+
+- Implementado rotinas de super-pesquisa na janela principal com pesquisa em todos os módulos;
+
+- Implementado relatório para exibir os detalhes do colaborador
+
+- Alterado nos módulos de consultas para exibição do telefone e celular logo abaixo do nome, a 
+  fim de utilizar a consulta como agenda
+
+- Criado módulo para resposta de recados.

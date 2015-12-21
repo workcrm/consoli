@@ -1,0 +1,7 @@
+10-03-2011
+
+
+16/03/2011
+  - Reescrito rotina para atualizacao online dos boletos de um formando especifico, facilitando na hora que um titulo for atualizado, podendo somente os titulos deste formando serem enviados para o site. (Bruna)
+  - Implementado no modulo de alteracao de conta a receber que, se alterar a data do vencimento, o boleto vinculado tera a mensagem que ele esta reajustado e removida. (Jessica)
+  - Modificado no relatorio de retornos por data, para ordenar a listagem por numero do titulo ao inves de por nome do sacado (Jana)
